@@ -1,0 +1,311 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #011c37;
+}
+body{
+    background-color: #eaf3fa;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-direction: column;
+}
+.fixed{
+    position: fixed;
+}
+.menu{
+    align-items: center;
+}
+.menu h2{
+    color: #2b193f;
+    margin-right: 1em;
+}
+nav{
+    
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .25s;
+}
+.detect{
+    position: absolute;
+    bottom: -60px;
+    height: 1em;
+    width: 1em;
+   
+}
+
+.menu_btn{
+    height: 40px;
+    width: 50px;
+    justify-content: space-around;
+    margin-right: 3em;
+    background-color: transparent;
+    
+}
+.menu :hover{
+    cursor: pointer;
+}
+.menu_btn i{
+    width: inherit;
+    height: 4px;
+    background-color: #2b193f;
+    display: block;
+    transition: all .25s;
+}
+.logo{
+    color: #2b193f;
+    margin: 0;
+    font-size: 30px;
+    margin-left: 1em;
+    transition: all .25s;
+}
+.solid_nav{
+    background-color: #2b193f;
+
+}
+.solid_logo{
+    color: #eaf3fa;
+}
+.solid_btn{
+    background-color: #eaf3fa !important;
+}
+.home_banner{
+    height: 45em;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 3px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5em;
+}
+.home_banner img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    
+}
+.home_banner h3, .home_banner h1{
+    margin-left: 20px;
+    color: #eaf3fa;
+    width: fit-content;
+    padding: 15px;
+}
+.home_banner h1{
+    background-color: #2b193f;
+    font-size: 80px;
+    
+}
+.home_banner h3{
+    background-color: #695065;
+    font-size: 25px;
+    font-weight: 400;
+}
+.disclaimer{
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.disclaimer p{
+    width: 60%;
+    text-align: center;
+    margin-left: 1em;
+    font-weight: 700;
+}
+.disclaimer img{ 
+    width: 5%;
+}
+
+.select_pricing,.find_tutors{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+.select_pricing h2,.find_tutors h2{
+    font-size: 40px;
+
+}
+.card_container{
+    justify-content: space-around;
+    width: 100%;   
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
+.card{
+    width: 17em;
+    height: 17em;
+    align-items: center;
+    background-color: #f9fcff;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 0px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    border-radius: 10px;
+
+}
+.card img{
+    height: 4em;
+    width: 4em;
+}
+.card h3{
+    font-size: 25px;
+}
+.card p{
+    font-size: 18px;
+    font-weight: 500;
+    
+    text-align: center;
+}
+footer{
+    height: 32em;
+    background-color: #2b193f;
+    position: absolute;
+    left: -.5em;
+    
+    width: 100vw;
+   
+}
+footer h2, footer form{
+    margin-left: 50px;
+}
+footer h2{
+    color: #eaf3fa;
+    font-size: 50px;
+}
+.contact{
+    width: 50%;
+    
+}
+.contact_form{
+    height: 22em;
+    justify-content: space-around;
+    
+}
+input,textarea{
+    
+    background-color: #eaf3fa;
+    font-size: 20px;
+    border: none;
+    width: 30em;
+}
+input{
+    height: 2.5em;
+}
+button{
+    background-color: #acc7d8;
+    color: #2b193f;
+    width: fit-content;
+    padding: .5em;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    border:none;
+
+}
+
+
+.courses_selector h3{
+    background-image: linear-gradient(rgba(172, 199, 216,.5), rgba(172, 199, 216,.5));
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    width: fit-content;
+    transition: background-size .5s;
+    cursor: pointer;
+    padding: .3em;
+    margin: .5em 1em .75em 0;
+    
+    font-size: 27px;
+}
+.highlighted{
+
+    background-size: 100% 100% !important;
+}
+
+.courses{
+    
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+.courses h1{
+    font-size: 50px;
+
+}
+.courses_selector, .course_list{
+    width: 50%;
+    height: fit-content;
+}
+.course_list h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity .25s;
+}
+.course_list li{
+    font-size: 30px;
+    line-height: 1.4;
+}
+.main_courses_content{
+    height: 42em;
+}
+.course_list ul{
+    opacity: 0;
+    transition: opacity .25s;
+}
+.show{
+    opacity:1 !important;
+}
+
+.select_pricing p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.prices h4{
+    
+    background-color: #f9fcff;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 0px 0px 0 rgba(0, 0, 0, 0.19);
+    padding: .5em;
+    border-radius: 5px;
+    width: fit-content;
+}
+.classes li{
+    line-height: 1.6;
+    font-weight: 500;
+}
+.prices,.classes{
+    width: 50%;
+    align-items: center;
+}
+.classes{
+    justify-content: center;
+}
+.category{
+    align-items: center;
+}
+.row{
+    justify-content: space-between;
+    width: 100%;
+}
+.select_pricing{
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
