@@ -102,7 +102,7 @@ menu_container.addEventListener('click',menuAnimation);
 menu_container.addEventListener('mouseover',overMenu);
 menu_container.addEventListener('mouseleave',leaveMenu);
 
-const nav_paths = ['../html/index.html','../html/courses.html','../html/pricing.html','../html/index.html#find'];
+const nav_paths = ['../docs/index.html','../docs/courses.html','../docs/pricing.html','../docs/index.html#find'];
 const nav_link_titles = ['Home', 'Courses', 'Pricing', 'Find Tutoring'];
 const nav_page = document.createElement('div');
 nav_page.setAttribute('class','nav_page flex col');
