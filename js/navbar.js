@@ -48,52 +48,72 @@ function leaveMenu(){
   
  
 }
+const top_bar = document.getElementById('onebar');
+const mid_bar = document.getElementById('twobar');
+const bottom_bar = document.getElementById('threebar');
+let transition =false;
 function menuAnimation(){
-  if(active===false){
-    menu_clicked = true;
-    setTimeout(()=>{
-      menu_btn.classList.add('shrink');
-      menu_tag.innerHTML = 'Close';
-    },50);
-    const top_bar = document.getElementById('onebar');
-    const mid_bar = document.getElementById('twobar');
-    const bottom_bar = document.getElementById('threebar');
-    setTimeout(()=>{
-      menu_bars.forEach(function(bar){
-        bar.classList.add('absolute')
-      });
-      top_bar.classList.add('top_bar');
-      mid_bar.classList.add('mid_bar')
-      bottom_bar.classList.add('bottom_bar')
-      menu_clicked = false;
+  
+    if(active===false){
       
-    },100)
-  }
-  else{
-    menu_clicked = true;
-    setTimeout(()=>{
-      menu_bars.forEach(function(bar){
-        bar.classList.remove('absolute')
-      });
-      menu_btn.classList.remove('shrink');
+      menu_clicked = true;
+      setTimeout(()=>{
+        menu_btn.classList.add('shrink');
+        menu_tag.innerHTML = 'Close';
+      },50);
       
-    },200);
-    const top_bar = document.getElementById('onebar');
-    const mid_bar = document.getElementById('twobar');
-    const bottom_bar = document.getElementById('threebar');
-    setTimeout(()=>{
+      setTimeout(()=>{
+        menu_bars.forEach(function(bar){
+          bar.classList.add('absolute')
+        });
+        top_bar.classList.add('top_bar');
+        mid_bar.classList.add('mid_bar')
+        bottom_bar.classList.add('bottom_bar')
+        menu_clicked = false;
+        
+      },100)
       
-      top_bar.classList.remove('top_bar');
-      mid_bar.classList.remove('mid_bar')
-      bottom_bar.classList.remove('bottom_bar')
-      menu_clicked = false;
+    }
+    else{
+      menu_clicked = true;
       
-    },50)
+      setTimeout(()=>{
+        menu_bars.forEach(function(bar){
+          bar.classList.remove('absolute')
+        });
+        menu_btn.classList.remove('shrink');
+        
+      },200);
+      
+      setTimeout(()=>{
+        
+        top_bar.classList.remove('top_bar');
+        mid_bar.classList.remove('mid_bar')
+        bottom_bar.classList.remove('bottom_bar')
+        
+        
+      },50)
+      setTimeout(()=>{
+        menu_tag.innerHTML = 'Menu';
+        menu_clicked = false;
+      },400)
+    }
     setTimeout(()=>{
-      menu_tag.innerHTML = 'Menu';
-    },400)
-  }
+      if(menu_tag.innerHTML === 'Menu'){
+        active = false;
+        menu_bars.forEach(function(bar){
+          bar.classList.remove('absolute')
+        });
+        menu_btn.classList.remove('shrink');
+        top_bar.classList.remove('top_bar');
+        mid_bar.classList.remove('mid_bar')
+        bottom_bar.classList.remove('bottom_bar')
+        document.body.style.overflow='';
+        
 
+      }
+    },600)
+  
   
 
 }
@@ -102,7 +122,7 @@ menu_container.addEventListener('click',menuAnimation);
 menu_container.addEventListener('mouseover',overMenu);
 menu_container.addEventListener('mouseleave',leaveMenu);
 
-const nav_paths = ['../docs/index.html','../docs/courses.html','../docs/pricing.html','../docs/index.html#find'];
+const nav_paths = ['./index.html','./courses.html','./pricing.html','./index.html#find'];
 const nav_link_titles = ['Home', 'Courses', 'Pricing', 'Find Tutoring'];
 const nav_page = document.createElement('div');
 nav_page.setAttribute('class','nav_page flex col');
@@ -149,15 +169,8 @@ function removeNav(){
         nav.classList.add('solid_nav');
       }
 
-      
     },increment-100)
-    
-    
     active = false;
-
-
-
-    menu_clicked = true;
     setTimeout(()=>{
       menu_bars.forEach(function(bar){
         bar.classList.remove('absolute')
@@ -173,12 +186,19 @@ function removeNav(){
       top_bar.classList.remove('top_bar');
       mid_bar.classList.remove('mid_bar')
       bottom_bar.classList.remove('bottom_bar')
-      menu_clicked = false;
+      
       
     },50)
     setTimeout(()=>{
       menu_tag.innerHTML = 'Menu';
+      menu_clicked = false;
     },400)
+    
+    
+    
+
+
+
 
 }
 
@@ -213,6 +233,7 @@ menu_container.addEventListener('click',function(){
   else{
     removeNav()
   }
+  
   
 })
 

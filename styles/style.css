@@ -506,6 +506,7 @@ tbody tr:last-of-type{
     justify-content: space-around;
     align-items: center;
     width: 80%;
+    min-height: 300px;
 }
 .testimonial_text{
     width: 50%;

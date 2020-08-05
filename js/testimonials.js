@@ -10,7 +10,10 @@ const testimonial_list = [
     <br><br> <span class = 'bold'>-Kristen N.</span>`,
     `I haven’t struggled more in my life than in my junior year. I had to go in for tutoring almost every day for Spanish, but it never helped since so many people needed tutoring too. Then, Youssef came to help me one on one. Our once a week sessions gave me enough understanding to succeed and suddenly my grades and test scores went up. He’s not only good at Spanish but math too. I don’t know how I would've gotten through my junior year without Youssef.
     <br><br> <span class = 'bold'>-Jasmine F.</span>`,
-    'Raunak a GANG'];
+    `I generally had high grades in high school until AP Physics came around; we took our first exam in the class, let me just say I didn’t do too well. I decided to go to tutoring, and man oh man it was worth it. Raunak was there helping fellow students, so I had asked him for help. As a result from working with him, my test scores and understanding of class concepts rose a ton. I began coming to tutoring more frequently and no matter the assignment, I felt more and more satisfied with my responses. Soon enough came the AP exam and I felt confident that Raunak’s mentorship would pay off at this key moment. Now a couple months later with high scores received both in the class and AP exam, I am extremely proud of my growth and expertise in physics’ concepts. I am so grateful for Raunak’s help the entire year!
+    <br><br> <span class = 'bold'>-Arun T.</span>`,
+    `Michael was an amazing tutor for me ! He helped me a ton in Honors Chemistry , with his tutoring I understood the subject way faster and raised my grade in the class !!
+    <br><br> <span class = 'bold'>-Dejanelle B.</span>`];
 const testimonial_text = document.querySelector('div.testimonial_text');
 testimonial_text.innerHTML = testimonial_list[index];
 
