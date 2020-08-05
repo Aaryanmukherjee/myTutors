@@ -478,6 +478,51 @@ tbody tr:last-of-type{
     margin: .5em;
       
 }
+.testimonials{
+    align-items: center;
+    margin-bottom: 3em;
+}
+.testimonials h2{
+    font-size: 40px; 
+}
+
+.testimonial_selection{
+    margin-top: 3em;
+    justify-content: center;
+}
+.selector{
+    height: 30px;
+    width: 30px;
+    background-color:#acc7d8;
+    border-radius: 100%;
+    margin: 3px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.selected{
+    background-color:#011c37;
+}
+.gallery{
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.testimonial_text{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+
+    transition: all .5s;
+}
+
+.disappear{
+    opacity: 0;
+}
+.bold{
+    font-weight: 500;
+}
+
 
 
 

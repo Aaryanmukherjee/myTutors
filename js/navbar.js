@@ -155,6 +155,31 @@ function removeNav(){
     
     active = false;
 
+
+
+    menu_clicked = true;
+    setTimeout(()=>{
+      menu_bars.forEach(function(bar){
+        bar.classList.remove('absolute')
+      });
+      menu_btn.classList.remove('shrink');
+      
+    },200);
+    const top_bar = document.getElementById('onebar');
+    const mid_bar = document.getElementById('twobar');
+    const bottom_bar = document.getElementById('threebar');
+    setTimeout(()=>{
+      
+      top_bar.classList.remove('top_bar');
+      mid_bar.classList.remove('mid_bar')
+      bottom_bar.classList.remove('bottom_bar')
+      menu_clicked = false;
+      
+    },50)
+    setTimeout(()=>{
+      menu_tag.innerHTML = 'Menu';
+    },400)
+
 }
 
 menu_container.addEventListener('click',function(){
