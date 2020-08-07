@@ -135,6 +135,9 @@ for(let i =0;i<nav_paths.length;i++){
   const nav_link = document.createElement('h2');
   nav_link.innerHTML = nav_link_titles[i];
   nav_link.setAttribute('class','nav_link');
+  if (i===nav_paths.length-1){
+    anchor.setAttribute('target','_blank');
+  }
   anchor.appendChild(nav_link);
   anchor.addEventListener('click',()=>{
     removeNav()

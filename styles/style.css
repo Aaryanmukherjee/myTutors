@@ -537,3 +537,14 @@ tbody tr:last-of-type{
     overflow-x: scroll;
     margin: 0 auto;
 }
+
+.price_disclaimer{
+    width: 30%;
+    margin: 0 auto;
+    font-size: 20px;
+
+}
+.price_disclaimer p{
+    text-align: center;
+    font-weight: 500;
+}
