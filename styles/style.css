@@ -209,7 +209,7 @@ a{
 .select_pricing,.find_tutors{
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1em;
 }
@@ -386,7 +386,7 @@ button{
 }
 table{
     margin: 0 auto;
-    min-width: 90%;
+    width: 90%;
     border-collapse: collapse;
     margin-bottom: 2em;
     border-radius: 5px;
