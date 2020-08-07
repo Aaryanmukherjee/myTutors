@@ -27,7 +27,8 @@ const math_course_list = ['Algebra I/II',
     'Statistics',
     'AP Statistics'	];
 const science_course_list = ['Investigative Science',	
-    'Biology/Chemistry/Physics',	
+    'Biology/Chemistry/Physics',
+    'Honors Bio/Chem',	
     'AP Physics I',	
     'AP Biology/Chemistry',	
     'AP Physics 2/Physics C',	
@@ -42,7 +43,8 @@ const history_course_list = ['World History',
     'Economics'		];
 
 const english_course_list = [	
-    'English 9/10/11/12',	
+    'English 9/10/11/12',
+    'Honors English 9/10',	
     'AP English Language and Composition',		];
 
 const foreign_course_list = ['Spanish 1/2',	

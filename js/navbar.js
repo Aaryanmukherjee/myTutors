@@ -4,8 +4,11 @@ const nav = document.querySelector('nav');
 
 nav.setAttribute('class','flex fixed');
 const logo = document.createElement('h1');
+const logo_link = document.createElement('a');
+logo_link.setAttribute('href','./index.html')
 logo.setAttribute('class','logo');
 logo.innerHTML = 'My Tutors';
+logo_link.appendChild(logo);
 const menu_container = document.createElement('div');
 menu_container.setAttribute('class','menu flex');
 const menu_btn = document.createElement('div');
@@ -16,7 +19,7 @@ menu_tag.innerHTML = 'Menu'
 menu_container.appendChild(menu_tag);
 menu_container.appendChild(menu_btn);
 
-nav.appendChild(logo);
+nav.appendChild(logo_link);
 nav.appendChild(menu_container);
 
 
@@ -122,7 +125,7 @@ menu_container.addEventListener('click',menuAnimation);
 menu_container.addEventListener('mouseover',overMenu);
 menu_container.addEventListener('mouseleave',leaveMenu);
 
-const nav_paths = ['./index.html','./courses.html','./pricing.html','./index.html#find'];
+const nav_paths = ['./index.html','./courses.html','./pricing.html','https://forms.gle/4iR8ndJaN2JYiZ778'];
 const nav_link_titles = ['Home', 'Courses', 'Pricing', 'Find Tutoring'];
 const nav_page = document.createElement('div');
 nav_page.setAttribute('class','nav_page flex col');

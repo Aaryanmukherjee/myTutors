@@ -163,7 +163,7 @@ a{
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 3px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5em;
 }
-.home_banner img{
+.home_banner img.background{
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -186,7 +186,7 @@ a{
     font-size: 25px;
     font-weight: 400;
 }
-.home_banner svg{
+.home_banner img.logo{
     position: absolute;
     top: 2em;
     left: 2em;
@@ -252,7 +252,7 @@ a{
     text-align: center;
 }
 footer{
-    height: 32em;
+    height: 36em;
     background-color: #2b193f;
     position: absolute;
     left: -.5em;
@@ -260,12 +260,16 @@ footer{
     width: 100vw;
    
 }
-footer h2, footer form{
+footer h2, footer form, footer h3{
     margin-left: 50px;
 }
 footer h2{
     color: #eaf3fa;
     font-size: 50px;
+}
+footer h3{
+    color: #eaf3fa;
+
 }
 .contact{
     width: 50%;
