@@ -8,7 +8,8 @@ const resize = () =>{
     if(img_height<banner_height){
         banner.style.height = `${img_height}px`;
     }
-    
+    console.log(img_height);
+    console.log(banner_height);
 }
 
 
