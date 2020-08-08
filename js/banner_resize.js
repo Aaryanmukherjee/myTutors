@@ -5,7 +5,7 @@ const resize = () =>{
     let img_height = Number(img.clientHeight);
     let banner_height = Number(banner.clientHeight);
     console.log(img_height, banner_height);
-    if(img_height<banner_height){
+    if(img_height<banner_height && img_height !== 0){
         banner.style.height = `${img_height}px`;
     }
     console.log(img_height);
