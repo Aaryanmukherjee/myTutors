@@ -14,7 +14,7 @@ const resize = () =>{
 
 
 
-    setTimeout(resize,300);
+    setInterval(resize,300);
     console.log('DOM fully loaded and parsed');
 
 
