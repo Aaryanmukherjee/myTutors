@@ -13,8 +13,8 @@ const resize = () =>{
 }
 
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    setTimeout(resize,100);
+
+    setTimeout(resize,300);
     console.log('DOM fully loaded and parsed');
-});
+
 
