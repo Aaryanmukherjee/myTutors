@@ -5,7 +5,7 @@ const resize = () =>{
     let img_height = Number(img.clientHeight);
     let banner_height = Number(banner.clientHeight);
     console.log(img_height, banner_height);
-    if(img_height<banner_height && img_height !== 0){
+    if(img_height<banner_height && img_height >= 50){
         banner.style.height = `${img_height}px`;
     }
     console.log(img_height);
@@ -14,7 +14,7 @@ const resize = () =>{
 
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    resize();
+    setTimeout(resize,1000);
     console.log('DOM fully loaded and parsed');
 });
 
