@@ -47,9 +47,9 @@ const english_course_list = [
     'Honors English 9/10',	
     'AP English Language and Composition',		];
 
-const foreign_course_list = ['Spanish 1/2',	
-    'Honors Spanish 3',	
-    'AP Spanish 4/5',		];
+const foreign_course_list = ['Spanish, Mandarin, French 1/2',	
+    'Honors Spanish, Mandarin, French 3',	
+    'AP Spanish and French 4/5, AP Mandarin 4',		];
 
 const elective_course_list = ['AP Seminar',	
     'AP Computer Science Principles',	
